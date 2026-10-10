@@ -1,0 +1,75 @@
+[project]
+name = "credsweeper"
+dynamic = ["version"]
+description = "Credential Sweeper"
+authors = [
+]
+dependencies = [
+    "base58",
+    "beautifulsoup4>=4.11.0",
+    "bech32",
+    "brotli",
+    "colorama",
+    "cryptography",
+    "GitPython",
+    "humanfriendly",
+    "lxml",
+    "numpy",
+    "odfpy",
+    "onnxruntime",
+    "openpyxl",
+    "pandas",
+    "pdfminer.six",
+    "pybase62",
+    "pygments",
+    "pyjks",
+    "python-dateutil",
+    "python-docx",
+    "python-pptx",
+    "PySquashfsImage",
+    "PyYAML",
+    "pyxlsb",
+    "rpmfile",
+    "striprtf",
+    "tqdm",
+    "whatthepatch",
+    "xlrd",
+    "zstandard; python_version < '3.14'",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Security",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.urls]
+Homepage = "https://github.com/Samsung/CredSweeper"
+"Bug Tracker" = "https://github.com/Samsung/CredSweeper/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "credsweeper/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+ignore-vcs = true
+only-include = ["/credsweeper"]
+core-metadata-version = "2.4"
+
+[tool.hatch.build.targets.wheel]
+core-metadata-version = "2.4"
+
+[project.scripts]
+credsweeper = "credsweeper.__main__:main"

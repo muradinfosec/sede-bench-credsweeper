@@ -1,0 +1,18 @@
+https://docs.gitlab.com/ee/security/tokens/#token-prefixes
+
+gloas-7fc1974b38580e6ceca8c077863cd5e88745895dfcbe1ae3c36eab9c498103dc # OAuth Application Secret
+
+
+
+
+glptt-33276248c9748113e978392e5c074b7f974f8683 # Trigger token
+
+glimt-1jpqzsnw2n71om0r9kgt06os3 # Incoming mail token
+
+_gitlab_session=8d2a78c080a3af1e6a4677be474432f2 # GitLab session cookies
+
+
+glrtr-KZX7Mizo7RYFKh2JScz6aeqZ3WG8nxujE21QpZVIr # Registration runner token
+glwt-G9dr9LJjGiSfBdxzDVyHi7vSdDcAftOmJ # Workspace token
+
+
